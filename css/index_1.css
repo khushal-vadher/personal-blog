@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     }
+ 
+ html{
+     scroll-behavior: smooth;
+     font-size: 62.5%;
+
+}
+ 
+body{
+    font-family: 'Times New Roman', serif;
+    background: linear-gradient(130deg, #aa6b6b 0%, #4b729b 70%);
+
+}
+ 
+ ul li{
+     list-style: none;
+ }
+ 
+ a{
+     font-size: 1.6rem;
+     text-decoration: none;
+ }
+ 
+ p,li{
+     font-size: 1.6rem;
+     margin: 0.5em 0;
+     letter-spacing: 0.15em;
+ }
+
+
+ .lg-heading{
+    font-size: 3.7rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4d4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-grey{
+    color: #555555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+.text-regular
+{
+    font-size: 20px;
+}
+.h3-text
+{
+    font-weight:   1000;
+    font-size: 25px;
+}
+
+.intro
+{
+    font-size: 250px;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+ .btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff; 
+    border-radius: 100px;
+}
+
+.btn-secondary{
+    border: 2px solid #171079;
+    border-radius: 1.5em;
+    color: #0d2194;
+    background: #fff;
+}
+
+.btn-primary:hover{
+    border: 3px solid red;
+    background-color: rgb(209, 192, 211);
+    font-size:25px;
+    color: rgb(35, 40, 119);
+}
+.btn-secondary:hover{
+    border: 3px solid blue;
+    background-color: #36cdd8;
+    font-size: 15px; 
+    color: black;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+    padding-bottom: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    height: 1000px;
+    clear: both;
+  }
+  /*  about   */
+
+
+  
+/* Float four columns side by side */
+.column_about {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row_about {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row_about:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column_about {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .main_about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 260px;
+  }
+
+  main{
+    height: 500px;
+    background-color: wheat;
+    background-size: cover;
+    padding: 30px;
+   
+}
+
+  /*  about end    */
+
+    
+    .column_a {
+        float: right;
+        width: 50%;
+        padding: 15px;
+      }
+      
+      /* Clear floats after the columns */
+      .row_a:after {
+    background-color: floralwhite;
+
+        content: "";
+        display: table;
+        clear: both;
+      }
+ .header{
+     height: 100vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     opacity: 1;
+     
+ }
+ 
+ .navbar{
+     position: fixed;
+     width: 100vw;
+     background: #263238;
+     padding: 0.4rem;
+     z-index: 10;
+ }
+ 
+ .navbar a:link,
+ .navbar a:visited{
+     color: #f4f4f4;
+ }
+ 
+ .navbar a{
+     padding: 10px 10px;
+     margin: auto;
+     display: block;
+ }
+ 
+ .navbar a:hover{
+     border-radius: 10%;
+     font-size: 20px;
+     background-color: #ddd;
+     color: black;
+ }
+ 
+  .navbar .logo{
+     float: left;
+     margin-top: 5px ;
+ }
+ 
+ .navbar .nav-items{
+     float: right;
+     margin-top: auto;
+ }
+ 
+
+ .navbar::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+  .navbar .nav-item{
+     
+     display: inline-flex;
+     padding: 0.5rem;
+ }
+
+ .header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+ .header-content{
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+       
+}
+
+
+/*  technology  */
+
+
+.showcase{
+    background-image: url(../img/technology.png);
+    padding: 10rem 6rem;
+}
+
+.showcase .TECH_HEAD{
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.row{
+    height: 350px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box , .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box , .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*              hobbies         */
+
+
+
+
+
+
+/*footer*/
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-links i{
+    margin: 2rem;
+
+}
+
+
+.social-menu
+{
+ background: #19252b;
+ color: #f4f4f4;
+ padding: 4px 300px;
+ margin:3px 3px 3px;
+ text-align: center;
+  
+}
+
+
+/* for make responsible    */
+
+
+
+
+@media (max-width:350px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float:none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+    }   
+    .navbar{
+        height:100px;
+        position: relative;
+    }
+    .navbar .nav-items{
+        opacity: 1;
+        position: absolute;
+        top: -100%;
+        left: -100%;
+    }
+    .header-content .main-heading
+    {
+        display: none;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+
+    }
+    .row .img-box,.row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.336) ;
+    }
+
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none ;
+    }
+
+    .cta-banner-left,.cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+
+@media (min-width:350px) and (max-width:500px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float:none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+    }   
+    .navbar{
+        height:50px;
+        position: relative;
+    }
+    .navbar .nav-items{
+        opacity: 1;
+        position: absolute;
+        top: -100%;
+        left: -100%;
+    }
+    .header-content .main-heading
+    {
+        display: none;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+
+    }
+    .row .img-box,.row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.336) ;
+    }
+
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none ;
+    }
+
+    .cta-banner-left,.cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media (min-width:501px) and (max-width:900px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float:none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }   
+
+    .row{
+        height: auto;
+        width: 100%;
+
+    }
+    .row .img-box,.row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.336) ;
+    }
+
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none ;
+    }
+
+    .cta-banner-left,.cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    p{
+        font: 1.8rem;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+
+    html{
+        font-size: 56.25%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+}
+
+
+@media (orientation:landscape) and (max-height:500px){
+
+    .header{
+        height: 90vmax;
+
+    }
+    
+}

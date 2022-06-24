@@ -1,0 +1,175 @@
+
+ <!--<legend>REGISTRATION YOUR SELF HERE...</legend>-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <link rel="icon" href="./img/web-icon.png" type="image/png" sizes="32x32">
+  <title>Contact Us</title>
+ <style>
+ * {
+   box-sizing: border-box;
+   padding:20px;
+
+ }
+ body{
+  background: linear-gradient(130deg, #aa6b6b 0%, #4b729b 70%);
+  padding-left: 80px;
+  padding-top: 20px;
+
+ }
+ 
+ input[type=text], select, textarea {
+   width: 40%;
+   padding: 12px;
+   border: 1px solid rgb(122, 118, 118);
+   border-radius: 10px;
+   resize: vertical;
+ }
+ 
+ label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+ }
+
+ legend
+ {
+   font-size: 20px;
+ }
+ 
+ input[type=submit] {
+   background-color: #3f7bc9;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   float: right;
+ }
+ 
+ input[type=submit]:hover {
+   border: darkgreen solid 4px;
+   text-transform: uppercase;
+   font-size: 20px;
+   background-color: #45a049;
+ }
+ 
+ input[type=reset] {
+   background-color: #3f7bc9;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   float: right;
+ }
+ 
+ input[type=reset]:hover {
+  border: darkgreen solid 4px;
+   
+   text-transform: uppercase;
+   font-size: 20px;
+   background-color: #45a049;
+ }
+ 
+ .container {
+   font-size: 18px;
+   font-weight: 900;
+   border-radius: 10px;
+   background-color: #e4e0e0;
+   width: 78%;
+    }
+ 
+ .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 1px;
+ }
+ 
+ .col-75{
+   float: left;
+   width: 75%;
+   margin-top: 1px;
+ }
+ 
+ /* Clear floats after the columns */
+
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ .home
+ {
+   margin: 10px;
+  text-transform: uppercase;
+   border-radius: 100px;
+   background-color: #dac2c2;
+ }
+ .home:hover{
+   background-color: rgb(173, 97, 97);
+   font-size: 20px;
+   color: blue;
+ }
+ /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .col-25, .col-75, input[type=submit] {
+     width: 100%;
+     margin-top: 0;
+   }
+ }
+ </style>
+ </head>
+ <body>
+ 
+ 
+ <div class="container">
+   <form action="ind.html">
+  <fieldset>
+    <legend>CONTACT US</legend>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname" >Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">E-Mail Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your E-mail Address..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Moblie No.</label>
+        </div>
+        <div class="col-75 number">
+          <input type="text" max="10" min="10" placeholder="Your Moblie No..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Write Your Message</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="reset" value="Reset" style="float: left;">
+
+        <input type="submit" value="Submit">
+      </div>
+  </fieldset>
+   </form>
+   <a href="ind.html">
+   <input type="button" value="Home" class="home"> 
+  </a>
+ </div>
+ 
+ </body>
+ </html>
+ 
